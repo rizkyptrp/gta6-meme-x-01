@@ -1,6 +1,16 @@
-# GTA 6 Meme — "1 Sick Day. Worth It."
+# gta6-meme-x-01
 
-An entry for the make.fun bounty **gta6-meme-x-01** ("Post a GTA 6 meme on X").
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/rizkyptrp/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/rizkyptrp/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+
+GTA 6 Meme — "1 Sick Day. Worth It." — an entry for the make.fun bounty **gta6-meme-x-01** ("Post a GTA 6 meme on X"). A Vice City sunset: the make.fun ghost lounges on a magenta beach towel in a straw hat, holding up its magenta star coin, in front of a striped synthwave sun, palm trees, a neon **GTA VI** billboard and a wooden **LEONIDA** sign. The towel reads **MAKE.FUN**. Every pixel is drawn in code by `generate-meme.ts` — no image files are loaded and no network is used. The meme is live on X: https://x.com/accweptxing/status/2123495075430748445
+
+## Run it
+
+```sh
+MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
 
 ## The meme
 
@@ -30,8 +40,8 @@ beach in Leonida, payday coin in hand.
 | `meme.png` | The meme picture, 1024×1024, drawn 100% by `generate-meme.ts` |
 | `generate-meme.ts` | The meme generator (Node 22, standard library only) |
 | `main.ts` | The graded entrypoint: copies `POST.json` to the output directory |
-| `POST.json` | The address of the post on X (placeholder until the post is live) |
-| `POST-TEXT.md` | The drafted text of the X post |
+| `POST.json` | The address of the post on X (live: https://x.com/accweptxing/status/2123495075430748445) |
+| `POST-TEXT.md` | The text of the X post |
 
 ## How to regenerate the picture
 
@@ -65,7 +75,12 @@ non-zero. It reads and writes nothing else.
 
 ## Posting
 
-`POST.json` currently holds a placeholder URL. Once the meme is posted on
-X, replace it with the real post address, e.g.
-`{"url": "https://x.com/<handle>/status/<id>"}`. The post text in
-`POST-TEXT.md` is the draft to publish alongside the picture.
+The meme is posted on X at https://x.com/accweptxing/status/2123495075430748445
+with the text in `POST-TEXT.md` (joke line + @makefunai + the make.fun
+bounty link + the earn-money line + the make.fun play code). `POST.json`
+holds that post's address. The post and the account stay public until the
+results are out (8 Dec 2026).
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=67v2e6cq&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
